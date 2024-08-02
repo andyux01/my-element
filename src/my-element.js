@@ -41,7 +41,7 @@ export class myElement extends DDDSuper(LitElement) {
         background-color: greenyellow;
         /* nambah border dan tebal box shadow */
         border: 2px solid red;
-        box-shadow: rgba(0, 3, 33, 0.063) 6px 12px 3px 0px;
+        box-shadow: rgb(50 62 183 / 43%) 9px 16px 2px 2px;
       }
       .wrapper {
         margin: var(--ddd-spacing-2);
