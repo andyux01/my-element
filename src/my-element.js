@@ -1,6 +1,7 @@
 import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 
+
 export class myElement extends DDDSuper(LitElement) {
 
   static get tag() {
@@ -34,7 +35,7 @@ export class myElement extends DDDSuper(LitElement) {
       }
       :host([cool]) {
         font-size: var(--my-element-font-size, var(--ddd-font-size-xl));
-        background-color: grey
+        background-color: rebeccapurple;
       }
       :host([fancy]) {
         font-size: var(--my-element-font-size, var(--ddd-font-size-s));
