@@ -11,12 +11,14 @@ export class myElement extends DDDSuper(LitElement) {
     super();
     this.title = "";
     this.cool = false;
+    this.fancy = false;
   }
 
   static get properties() {
     return {
       title: { type: String },
       cool: { type: Boolean, reflect: true },
+      fancy: { type: Boolean, reflect: true },
     };
   }
 
@@ -33,6 +35,13 @@ export class myElement extends DDDSuper(LitElement) {
       :host([cool]) {
         font-size: var(--my-element-font-size, var(--ddd-font-size-xl));
         background-color: grey
+      }
+      :host([fancy]) {
+        font-size: var(--my-element-font-size, var(--ddd-font-size-s));
+        background-color: greenyellow;
+        /* nambah border dan tebal box shadow */
+        border: 2px solid red;
+        box-shadow: rgba(0, 3, 33, 0.063) 6px 12px 3px 0px;
       }
       .wrapper {
         margin: var(--ddd-spacing-2);
